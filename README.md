@@ -1,7 +1,7 @@
 # React 今日头条 WebApp
 
 基于 React(2.5) + redux + react-router-dom + axios + NProgress + less + ES6 等开发一款简易版今日头条 WebApp，UI 界面参考了安卓版的今日头条、flex 布局以及rem适配常见移动端。
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
 
 ## 开发目的
 
@@ -64,8 +64,6 @@ You can find the most recent version of this guide [here](https://github.com/fac
 如果觉得我的项目还不错的话 :clap:，就给个 [star](https://github.com/GolderBrother/react-simple-toutiao) :star: 鼓励一下吧~
 
 ## Build Setup
-
-如果需要在服务器上搭建的话就需要将 API 放到自己的服务器上面。
 
 ```bash
 # install dependencies
