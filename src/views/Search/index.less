@@ -1,0 +1,98 @@
+.full-box(@w:100%,@h:100%){
+    width: @w;
+    height: @h; 
+}
+.search-wrapper{
+    .full-box();
+    background-color: #fff;
+    .search-head-wrapper{
+        width: 100%;
+        height: .5rem;
+        padding: 0 .1rem;
+        .search-head-container{
+            .full-box();
+            .search{
+                position: relative;
+                width: e("calc(100% - .45rem)");
+                color: @font-gray;
+                .search-icon {
+                    position: absolute;
+                    left: 0.06rem;top: 50%;
+                    transform: translateY(-50%);
+                }
+                .search-input{
+                    width: 100%;
+                    height: .3rem;
+                    border: none;
+                    outline: none;
+                    background: #f4f4f4;
+                    text-indent: .3rem;
+                    border-radius: .04rem;
+                    font-size: .12rem;
+                    color: #555;
+                }
+            }
+            .search-btn{
+                z-index: 9;
+                color: @theme-blue;
+            }
+        }
+    }
+    .search-body-wrapper{
+        .full-box(100%,e("calc(100% - .5rem)"));
+        .search-body-container{
+            .full-box();
+            .guess{
+                .tip{
+                    color: #ccc;
+                    line-height: .35rem;
+                    font-size: .1rem;
+                    padding: 0 .1rem;
+                }
+                .search-menu{
+                    li{
+                        width: 50%;
+                        text-align: center;
+                        line-height: .35rem;
+                        font-size: .14rem;
+                        color: #333;
+                    }
+                }
+            }
+            .search-list{
+                .item{
+                    padding: .2rem .1rem;
+                    h4{
+                        color: #363636;
+                    }
+                    p{
+                        font-size: .16rem;
+                        line-height: .2rem;
+                        margin: .1rem 0;
+                    }
+                    .small-box{
+                      &>*{
+                        display: inline-block;
+                        margin-right: .04rem;
+                        vertical-align: middle;
+                        font-size: .1rem;
+                        color: #999;
+                      }
+                    }
+                    &-l{
+                      width: 70%;
+                      padding-right: 10px;
+                    }
+                    &-r{
+                      width: 30%;
+                      img{
+                        width: 100%;
+                      }
+                    }
+                }
+            }
+        }
+
+    }
+    
+}

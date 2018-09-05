@@ -1,0 +1,92 @@
+.article-wrapper{
+    width: 100%;
+    padding: 0 .1rem;
+    .article-head-wrapper{
+        .head{
+            width: 100%;
+            height: .5rem;
+            font-size: .25rem;
+        }
+    }
+    .article-body-wrapper{
+        .article-desc{
+            h2,h3{
+                margin: .1rem 0;
+            }
+            .info{
+                .info-l{
+                    .avatar{
+                        width: .4rem;
+                        height: .4rem;
+                        border-radius: 50%;
+                    } 
+                    .info-other{
+                        margin-left: .1rem;
+                        font-size: .12rem;
+                        time{
+                            color: #ccc;
+                        }
+                    }
+                }
+                .like-y{
+                    color: #f4f4f4;
+                    background-color: @theme-bg-red;
+                    padding: 5px;
+                    border-radius: 8px;
+                }
+                .like-n{
+                    color: #bbb;
+                }
+            }
+        }
+        .article-content{
+            .article-intro{
+                margin: .2rem 0;
+                line-height: .25rem;
+                font-size: .16rem;
+            }
+        }
+        .article-footer {
+            padding: .2rem 0;
+            .tags{
+                .tag{
+                    display: inline-block;
+                    margin-right: .15rem;
+                    margin-bottom: .15rem;
+                    padding: .06rem .1rem;
+                    background: #ccc;
+                    color: #333;
+                    border-radius: .04rem;
+                    font-size: .12rem;
+                }
+            }
+            .like-container{
+                height: .6rem;
+                .like-y{
+                    color: @theme-red;
+                    border-color: @theme-red; 
+                }
+                &>*{
+                    width: 1rem;
+                    height: .3rem;
+                    font-size: .12rem;
+                    border: 1px solid #ccc;
+                    border-radius: .15rem;
+                    svg{
+                        font-size: .16rem;
+                    }
+                    span{
+                        margin-left: .1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .loading-wrapper{
+        position: absolute;
+        top: 0.4rem;
+        width: 100%;
+        height: e("calc(100% - 0.5rem)")
+    }
+}

@@ -1,0 +1,55 @@
+.mall-wrapper{
+    h4{
+        line-height: .4rem;
+    }
+    .recommend{
+        background-color: #fff;
+        padding: .1rem;
+        .recommend-box{
+            .item{
+                width: 47%;
+                padding: .4rem 0 .4rem .1rem;
+                background-color: #eee;
+                h5{
+                    font-size: .2rem;
+                    color: #333;
+                }
+                span{
+                    font-size: .16rem;
+                    color: #aaa;
+                    line-height: .24rem;
+                }
+            }
+        }
+    }
+    .service-box{
+        margin-top: .1rem;
+        padding-left: .1rem;
+        background: #fff;
+        &:before {
+            border-left: none;
+            border-right: none;
+        }
+        :last-child {
+            &:before {
+                border-bottom: none;
+            }
+        }   
+        .service-item{
+            width: 100%;
+            height: .4rem;
+            font-size: .14rem;
+            color: #333;
+            padding-right: .1rem;
+            .arrow{
+                color: #bbb;
+            }
+        }
+    }
+    .tip{
+        margin-top: .2rem;
+        text-align: center;
+        color: @font-gray;
+        font-size: .12rem;
+    }
+}

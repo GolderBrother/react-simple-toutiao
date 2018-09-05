@@ -1,0 +1,164 @@
+.headline-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    .headline-head-wrapper{
+        width: 100%;
+        .headline-top-bar{
+            .item{
+                width: e("calc(100% / 3)");
+                height: .4rem;
+                line-height: .4rem;
+                text-align: center;
+                font-size: .16rem;
+                svg{
+                    margin-right: .04rem;
+                    font-size: .2rem;
+                }
+                &:first-child{
+                    svg{
+                        color: #409eff;
+                    }
+                }
+                &:nth-child(2){
+                    svg{
+                        color: #67c23a;
+                    }
+                }
+                &:last-child{
+                    svg{
+                        color: #f85959;
+                    }
+                }
+                &>*{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+            .text-wrapper{
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 100%;
+                background-color: #fff;
+                z-index: 100;
+                -webkit-transition: top .2s ease-out;
+                transition: top .2s ease-out;
+                &.text-active{
+                    top: 0;
+                }
+                .text-title{
+                    height: .4rem;
+                    line-height: .4rem;
+                    padding: 0 .1rem;
+                    color: #333;
+                    font-size: .14rem;
+                    .t-active{
+                        color: @theme-blue;
+                        pointer-events: inherit;
+                    }
+                    .t-disable{
+                        color: #ccc;
+                        pointer-events: none;
+                    }
+                }
+                .text-content{
+                    width: 100%;
+                    height: e("calc(100% - .5rem)");
+                    textarea{
+                        width: 100%;
+                        height: 100%;
+                        padding: .1rem;
+                        font-size: .14rem;
+                        border: 1px solid transparent;
+                        outline: none;
+                        -webkit-transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+                        transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+                    }
+                }
+            }
+        }
+    }
+    .headline-body-wrapper{
+        height: e("100% - .4rem");
+        .item{
+            padding: .1rem;
+            .item-t{
+                .item-t-l{
+                    .avatar{
+                        width: .4rem;
+                        height: .4rem;
+                        border-radius: 50%;
+                        margin-right: .08rem;
+                    }
+                    .info{
+                        display: inline-block;
+                        vertical-align: middle;
+                        .name{
+                            color: #111;
+                        }
+                        .info-box{
+                            color: @font-gray;
+                            font-size: .1rem;
+                        }
+                    }
+                }
+                .item-t-r{
+                    font-size: .12rem;
+                    .like-y{
+                        color: @font-gray;
+                    }
+                    .like-n{
+                        color: @theme-red;
+                    }
+                }
+            }
+            .item-m{ 
+                width: 100%;  
+                &-text{
+                    line-height: .25rem;
+                }
+                &-images{
+                    display: flex;
+                    margin-top: 0.04rem;
+                    align-items: flex-start;
+                    flex-wrap:wrap;
+                    img{
+                        &.one{
+                            width: 50%;
+                        }
+                        &.two{
+                            width: 40%;
+                            margin: 2%;
+                        }
+                        &.three{
+                            width: 29%;
+                            margin: 1% 2%;
+                        }
+                    }
+                }
+                &-readnum{
+                    font-size: 0.1rem;
+                    color: @font-gray;
+                }
+            }
+            .item-b {
+                &-icon{
+                    width: e("calc(100% / 3)");
+                    height: .4rem;
+                    text-align: center;
+                    font-size: .14rem;
+                    color: #666;
+                    span{
+                        margin-left: .1rem;
+                    }
+                    &-active{
+                        color: @theme-red;
+                    }
+                }
+            }
+        }
+    }
+}
+

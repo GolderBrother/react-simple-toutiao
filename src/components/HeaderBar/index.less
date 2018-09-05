@@ -1,0 +1,31 @@
+.headerbar-wrapper {
+    height: 0.5rem;
+    background: @theme-bg-red;
+    .logo {
+        width: 1.3rem;
+        height: 100%;
+        img {
+            width: 1rem;
+        }
+    }
+    .search {
+        width: e("calc(100% - 1.3rem)");
+        position: relative;
+        color: @font-gray;
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 0.06rem;
+            transform: translateY(-50%);
+        }
+        input {
+            width: 90%;
+            height: 0.3rem;
+            border: none;
+            outline: none;
+            background: @bg-color;
+            text-indent: 0.3rem;
+            border-radius: 0.04rem;
+        }
+    }
+}

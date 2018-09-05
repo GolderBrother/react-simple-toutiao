@@ -1,0 +1,105 @@
+.border-align-none(){
+    border-left: none;
+    border-right: none;
+}
+.account-container{
+    background-color: #f4f4f4;
+    .head-wrapper{
+        width: 100%;
+        background-color: #777;
+        .hd-t{
+            padding: .2rem;
+            .info{
+                color: #fff;
+                .avatar{
+                    width: .5rem;
+                    height: .5rem;
+                    border-radius: 50%;
+                }
+                &>*{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .login{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .hd-m{
+            font-size: .12rem;
+            color: @font-gray;
+            padding-bottom: .1rem;
+            .hd-m-item{
+                span{
+                    color: #fff;
+                    margin-bottom: .08rem;
+                }
+                .hd-m-t{
+                    color: #aaa;
+                }
+            }
+        }
+        .hd-m-item, .hd-b-item {
+            width: e("calc(100% / 3)");
+            height: 0.5rem;
+            flex-direction:column;
+            .hd-m-text{
+                color: #aaa;
+            }
+        }
+        .hd-b{
+            padding: .1rem 0;
+            background: #fff;
+            .hd-b-item{
+                font-size: .12rem;
+                svg{
+                    font-size: .2rem;
+                    margin-bottom: .08rem;
+                    &:first-child{
+                        color: @theme-blue;
+                    }
+                    &:nth-child(2){
+                        color: @theme-green;
+                    }
+                    &:last-child{
+                        color: @theme-red;
+                    }
+                } 
+            }
+        }
+    }
+    .body-wrapper{
+        .border-align-none();
+        .li{
+            display: flex;
+            width: 100%;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            padding: 0 0.1rem;
+            background-color: #fff;
+            justify-content: space-between;
+            align-items: center;
+            svg{
+                color: #bbb;
+            }
+            span{
+                color: @font-gray;;
+                font-size: .12rem;
+                margin-right: .08rem;
+            }
+            &:first-child{
+                margin: .1rem 0;
+                &:before{
+                    .border-align-none();
+                }
+            }
+            &:nth-child(3){
+                margin-bottom: .1rem;
+                &:before{
+                    .border-align-none();
+                }
+            }
+        }
+    }
+}
