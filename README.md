@@ -25,7 +25,7 @@
 **其他工具**
 
 * `react-create-app`：React 脚手架工具，快速初始化项目代码,后面对整个项目结构做了相应调整，比如build下面的webpack配置文件
-* `fastclick` ：消除 click 移动游览器 300ms 的延时
+* `fastclick` ：消除 click 移动端浏览器 300ms 的延时
 * `react-id-swiper` ： react专用的swiper插件
 * `NProgress` ： 移动设备的全站页面加载进度条插件
 
