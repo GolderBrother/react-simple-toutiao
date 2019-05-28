@@ -1,6 +1,6 @@
 # React 今日头条 WebApp
 
-基于 React(2.5) + redux + react-router-dom + axios + NProgress + less + ES6 等开发一款简易版今日头条 WebApp，UI 界面参考了安卓版的今日头条、flex 布局以及rem适配常见移动端。
+基于 React(16.4) + redux + react-router-dom + axios + NProgress + less + ES6 等开发一款简易版今日头条 WebApp，UI 界面参考了安卓版的今日头条、flex 布局以及rem适配常见移动端。
 
 
 ## 开发目的
