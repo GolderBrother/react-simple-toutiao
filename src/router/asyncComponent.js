@@ -3,7 +3,7 @@ import React from 'react';
 import NProgress from 'nprogress'
 
 /**
- * 动态异步加载组件吗，增加加载条 NProgress
+ * 动态异步加载组件，增加加载条 NProgress
  */
 
 export default loadComponent => (
