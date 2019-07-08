@@ -50,7 +50,7 @@ export const Local = {
     },
     set(key, val) {
         const setting = arguments[0];
-        if (Object.prototype.toString.call(setting).slice(8, -1) === 'Array') {
+        if (Object.prototype.toString.call(setting).slice(8, -1) === 'Object') {
             for (let i in setting) {
                 ls.setItem(i, JSON.stringify(setting[i]))
             }
@@ -74,7 +74,7 @@ export const Session = {
     },
     set(key, value) {
         const setting = arguments[0];
-        if (Object.prototype.toString.call(setting).slice(8, -1) === 'Array') {
+        if (Object.prototype.toString.call(setting).slice(8, -1) === 'Object') {
             for (let i in setting) {
                 ss.setItem(i, JSON.stringify(setting[i]))
             }
