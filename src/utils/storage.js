@@ -71,6 +71,7 @@ export const Local = {
 export const Session = {
     get(key) {
         if (key) return ss.getItem(key)
+        return null
     },
     set(key, value) {
         const setting = arguments[0];
