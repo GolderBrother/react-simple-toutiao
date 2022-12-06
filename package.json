@@ -47,7 +47,7 @@
     "fastclick": "^1.0.6",
     "glamor": "^2.20.40",
     "nprogress": "^0.2.0",
-    "qs": "^6.5.2",
+    "qs": "^6.5.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-fastclick": "^3.0.2",
